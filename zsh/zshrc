@@ -1,0 +1,19 @@
+export ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="owlycode"
+
+plugins=(git)
+
+# User configuration
+
+export PATH=$HOME/bin:/usr/local/bin:~/.composer/vendor/bin/:$PATH
+
+source $ZSH/oh-my-zsh.sh
+
+alias changelog='git log `git describe --tags --abbrev=0`..HEAD --pretty=format:%s'
+alias git='LANG=en_US git'
+alias ifstat="ifstat -S -i eth0 -i wlan0"
+alias docker-ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}"'
+
+. ~/.rupaz/z.sh
+
