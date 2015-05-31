@@ -7,6 +7,9 @@ sudo -v
 # MATE APPEARANCE
 dconf write /org/mate/marco/general/compositing-manager true
 dconf write /org/mate/marco/general/center-new-window true
+dconf write /org/mate/desktop/interface/gtk-theme "'Zukitwo'"
+dconf write /org/mate/desktop/interface/icon-theme "'Faenza'"
+dconf write /org/mate/marco/general/theme "'Gnome-Cupertino'"
 
 # GIT
 rm ~/.gitconfig
