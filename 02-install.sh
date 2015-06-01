@@ -4,12 +4,24 @@ set -ex
 
 sudo -v
 
+# NETWORK TOOLS
+sudo pacman -S gnome-keyring networkmanager-openvpn networkmanager-pptp wpa_supplicant
+
 # MATE APPEARANCE
 dconf write /org/mate/marco/general/compositing-manager true
 dconf write /org/mate/marco/general/center-new-window true
 dconf write /org/mate/desktop/interface/gtk-theme "'Zukitwo'"
 dconf write /org/mate/desktop/interface/icon-theme "'Faenza'"
 dconf write /org/mate/marco/general/theme "'Gnome-Cupertino'"
+
+# WEB & MAILS
+sudo pacman -S firefox flashplugin thunderbird
+
+# MESSENGING
+sudo pacman -S skype
+
+# PHOTO
+sudo pacman -S shotwell
 
 # GIT
 rm ~/.gitconfig
@@ -42,8 +54,11 @@ sudo systemctl enable docker
 sudo systemctl start docker
 sudo gpasswd -a $USER docker
 
+# SQL
+sudo pacman -S mariadb postgresql
+
 # PHP
-sudo pacman -S php php-intl
+sudo pacman -S php php-intl php-gd php-mcrypt
 sudo rm /etc/php/php.ini
 if [ ! -e /etc/php/php.ini ]; then
     sudo ln -s ~/dotfiles/php/php.ini /etc/php/php.ini
@@ -76,4 +91,3 @@ if [ ! -e $HOME/.oh-my-zsh/themes/owlycode.zsh-theme ]; then
 	ln -s ~/dotfiles/zsh/owlycode.zsh-theme ~/.oh-my-zsh/themes/owlycode.zsh-theme
 fi
 chsh -s /bin/zsh
-
