@@ -58,7 +58,7 @@ sudo gpasswd -a $USER docker
 sudo pacman -S mariadb postgresql
 
 # PHP
-sudo pacman -S php php-intl php-gd php-mcrypt
+sudo pacman -S php php-intl php-gd php-mcrypt xdebug
 sudo rm /etc/php/php.ini
 if [ ! -e /etc/php/php.ini ]; then
     sudo ln -s ~/dotfiles/php/php.ini /etc/php/php.ini

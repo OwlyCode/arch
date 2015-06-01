@@ -4,6 +4,11 @@ set -ex
 
 sudo -v
 
+# 32BITS SUPPORT
+echo "[multilib]" | sudo tee -a /etc/pacman.conf
+echo "Include = /etc/pacman.d/mirrorlist" | sudo tee -a /etc/pacman.conf
+sudo pacman -Syu
+
 # BASIC TOOLS
 sudo pacman -S openssh htop vim wget which unrar unzip gzip
 
