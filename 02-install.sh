@@ -25,7 +25,7 @@ if [ ! -e /etc/xdg/autostart/terminator.desktop ]; then
     sudo ln -s ~/dotfiles/terminator/terminator.desktop /etc/xdg/autostart/terminator.desktop
 fi
 
-# SUBLIME TEXT (editor, keymap, config, packages)
+# SUBLIME TEXT
 sudo pacman -S gtk2 libpng
 mkdir -p ~/builds
 cd ~/builds
@@ -35,6 +35,14 @@ cd sublime-text-dev
 nano PKGBUILD
 nano sublime-text-dev.install
 makepkg -si
+curl -L -O https://sublime.wbond.net/Package%20Control.sublime-package
+mkdir -p "~/.config/sublime-text-3/Installed Packages"
+mkdir -p ~/.config/sublime-text-3/Packages
+mv Package%20Control.sublime-package "~/.config/sublime-text-3/Installed Packages"
+
+if [ ! -d ~/.config/sublime-text-3/Packages/User ]; then
+    ln -s ~/dotfiles/sublime/packages ~/.config/sublime-text-3/Packages/User
+fi
 
 # DOCKER
 sudo pacman -S docker

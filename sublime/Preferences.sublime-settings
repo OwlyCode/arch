@@ -1,0 +1,20 @@
+{
+	"auto_complete": true,
+	"color_scheme": "Packages/Theme - Afterglow/Afterglow.tmTheme",
+	"draw_white_space": "all",
+	"font_face": "Source Code Pro",
+	"font_size": 10,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"status_bar_brighter": true,
+	"sublime_auto_complete": true,
+	"tabs_padding_small": true,
+	"tabs_small": true,
+	"theme": "Afterglow-orange.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false
+}
