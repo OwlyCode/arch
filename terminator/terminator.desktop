@@ -3,7 +3,7 @@ Type=Application
 Encoding=UTF-8
 Version=1.0
 Name=terminator
-Exec=terminator -Hm
+Exec=terminator -Hf
 X-GNOME-Autostart-enabled=true
 X-KDE-autostart-after=panel
 
