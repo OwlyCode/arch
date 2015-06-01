@@ -37,7 +37,7 @@ if [ ! -e /etc/xdg/autostart/terminator.desktop ]; then
     sudo ln -s ~/dotfiles/terminator/terminator.desktop /etc/xdg/autostart/terminator.desktop
 fi
 
-# SUBLIME TEXT (editor, keymap, config, packages)
+# SUBLIME TEXT
 sudo pacman -S gtk2 libpng
 mkdir -p ~/builds
 cd ~/builds
@@ -47,6 +47,14 @@ cd sublime-text-dev
 nano PKGBUILD
 nano sublime-text-dev.install
 makepkg -si
+mkdir -p ~/.config/sublime-text-3/Installed\ Packages
+mkdir -p ~/.config/sublime-text-3/Packages
+curl -L -O https://sublime.wbond.net/Package%20Control.sublime-package
+mv Package%20Control.sublime-package ~/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package
+
+if [ ! -d ~/.config/sublime-text-3/Packages/User ]; then
+    ln -s ~/dotfiles/sublime ~/.config/sublime-text-3/Packages/User
+fi
 
 # DOCKER
 sudo pacman -S docker
@@ -80,7 +88,6 @@ if [ ! -d ~/.rupaz ]; then
 fi
 
 # ZSH
-sudo pacman -S zsh zsh-completions
 if [ ! -d ~/.oh-my-zsh ]; then
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
@@ -90,4 +97,5 @@ fi
 if [ ! -e $HOME/.oh-my-zsh/themes/owlycode.zsh-theme ]; then
 	ln -s ~/dotfiles/zsh/owlycode.zsh-theme ~/.oh-my-zsh/themes/owlycode.zsh-theme
 fi
+sudo pacman -S zsh zsh-completions
 chsh -s /bin/zsh
