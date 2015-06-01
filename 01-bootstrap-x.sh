@@ -17,4 +17,3 @@ sudo cp ~/dotfiles/xorg/keyboard.conf /etc/X11/xorg.conf.d/10-keyboard-layout.co
 sudo systemctl enable lightdm
 
 reboot
-

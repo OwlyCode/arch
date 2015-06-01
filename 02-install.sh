@@ -35,13 +35,13 @@ cd sublime-text-dev
 nano PKGBUILD
 nano sublime-text-dev.install
 makepkg -si
-curl -L -O https://sublime.wbond.net/Package%20Control.sublime-package
-mkdir -p "~/.config/sublime-text-3/Installed Packages"
+mkdir -p ~/.config/sublime-text-3/Installed\ Packages
 mkdir -p ~/.config/sublime-text-3/Packages
-mv Package%20Control.sublime-package "~/.config/sublime-text-3/Installed Packages"
+curl -L -O https://sublime.wbond.net/Package%20Control.sublime-package
+mv Package%20Control.sublime-package ~/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package
 
 if [ ! -d ~/.config/sublime-text-3/Packages/User ]; then
-    ln -s ~/dotfiles/sublime/packages ~/.config/sublime-text-3/Packages/User
+    ln -s ~/dotfiles/sublime ~/.config/sublime-text-3/Packages/User
 fi
 
 # DOCKER
@@ -84,4 +84,3 @@ if [ ! -e $HOME/.oh-my-zsh/themes/owlycode.zsh-theme ]; then
 	ln -s ~/dotfiles/zsh/owlycode.zsh-theme ~/.oh-my-zsh/themes/owlycode.zsh-theme
 fi
 chsh -s /bin/zsh
-
