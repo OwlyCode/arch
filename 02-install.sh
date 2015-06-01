@@ -73,7 +73,6 @@ if [ ! -d ~/.rupaz ]; then
 fi
 
 # ZSH
-sudo pacman -S zsh zsh-completions
 if [ ! -d ~/.oh-my-zsh ]; then
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
@@ -83,4 +82,5 @@ fi
 if [ ! -e $HOME/.oh-my-zsh/themes/owlycode.zsh-theme ]; then
 	ln -s ~/dotfiles/zsh/owlycode.zsh-theme ~/.oh-my-zsh/themes/owlycode.zsh-theme
 fi
+sudo pacman -S zsh zsh-completions
 chsh -s /bin/zsh
