@@ -17,9 +17,6 @@ dconf write /org/mate/marco/general/theme "'Gnome-Cupertino'"
 # WEB & MAILS
 sudo pacman -S firefox flashplugin thunderbird
 
-# MESSENGING
-sudo pacman -S skype
-
 # PHOTO
 sudo pacman -S shotwell
 
