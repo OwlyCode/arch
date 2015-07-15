@@ -120,5 +120,11 @@
     { "keys": ["ctrl+k", "ctrl+è"], "command": "fold_by_level", "args": {"level": 7} },
     { "keys": ["ctrl+k", "ctrl+_"], "command": "fold_by_level", "args": {"level": 8} },
     { "keys": ["ctrl+k", "ctrl+ç"], "command": "fold_by_level", "args": {"level": 9} },
-    { "keys": ["ctrl+k", "ctrl+à"], "command": "unfold_all" }
+    { "keys": ["ctrl+k", "ctrl+à"], "command": "unfold_all" },
+    
+    { "keys": ["f6"], "command": "expand_fqcn" },
+    { "keys": ["shift+f6"], "command": "expand_fqcn", "args": {"leading_separator": true} },
+    { "keys": ["f5"], "command": "find_use" },
+    { "keys": ["f4"], "command": "import_namespace" },
+    { "keys": ["shift+f12"], "command": "goto_definition_scope" }
 ]
