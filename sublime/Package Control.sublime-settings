@@ -2,19 +2,21 @@
 	"in_process_packages":
 	[
 	],
-	"installed_packages":
-	[
-		"BracketHighlighter",
-		"DocBlockr",
-		"GitGutter",
-		"Markdown Preview",
-		"Package Control",
-		"PHP Companion",
-		"Phpcs",
-		"SideBarEnhancements",
-		"SublimeLinter",
-		"SublimeLinter-php",
-		"Theme - Afterglow",
-		"TrailingSpaces"
-	]
+        "installed_packages":
+        [
+                "BracketHighlighter",
+                "DocBlockr",
+                "GitGutter",
+                "Markdown Preview",
+                "Package Control",
+                "PHP Companion",
+                "Phpcs",
+                "PostgreSQL Syntax Highlighting",
+                "SideBarEnhancements",
+                "SublimeLinter",
+                "SublimeLinter-php",
+                "Theme - Afterglow",
+                "TrailingSpaces",
+                "Twig"
+        ]
 }
