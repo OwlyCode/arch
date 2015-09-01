@@ -13,6 +13,7 @@
 		"Phpcs",
 		"SideBarEnhancements",
 		"SublimeLinter",
+		"SublimeLinter-php",
 		"Theme - Afterglow",
 		"TrailingSpaces"
 	]
