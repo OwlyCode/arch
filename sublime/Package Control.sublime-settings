@@ -1,23 +1,30 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
-        "installed_packages":
-        [
-                "BracketHighlighter",
-                "DocBlockr",
-                "EditorConfig",
-                "GitGutter",
-                "Markdown Preview",
-                "Package Control",
-                "PHP Companion",
-                "Phpcs",
-                "PostgreSQL Syntax Highlighting",
-                "SideBarEnhancements",
-                "SublimeLinter",
-                "SublimeLinter-php",
-                "Theme - Afterglow",
-                "TrailingSpaces",
-                "Twig"
-        ]
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"EditorConfig",
+		"GitGutter",
+		"JSX",
+		"Markdown Preview",
+		"Package Control",
+		"PHP Companion",
+		"PHP Getters and Setters",
+		"php-grammar",
+		"Phpcs",
+		"PostgreSQL Syntax Highlighting",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-php",
+		"Theme - Afterglow",
+		"Theme - Fox",
+		"TrailingSpaces",
+		"Twig"
+	]
 }
