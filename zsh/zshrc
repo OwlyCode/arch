@@ -15,6 +15,7 @@ alias git='LANG=en_US git'
 alias ifstat="ifstat -S -i eth0 -i wlan0"
 alias docker-ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}"'
 alias subl="subl3"
+alias meteo="curl -4 http://wttr.in/Toulouse"
 
 . ~/.rupaz/z.sh
 
