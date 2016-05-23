@@ -17,6 +17,7 @@ alias docker-ip='docker inspect --format "{{ .NetworkSettings.IPAddress }}"'
 alias subl="subl3"
 alias meteo="curl -4 http://wttr.in/Toulouse"
 alias doco="docker-compose"
+alias "49.3"="git push --force"
 
 . ~/.rupaz/z.sh
 
