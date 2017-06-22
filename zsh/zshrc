@@ -26,3 +26,4 @@ function tellmylife() {
 
 . ~/.rupaz/z.sh
 
+# Optional, install manually : https://github.com/LazoCoder/Pokemon-Terminal
