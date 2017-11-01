@@ -7,15 +7,8 @@ sudo -v
 # NETWORK TOOLS
 sudo pacman -S gnome-keyring networkmanager-openvpn networkmanager-pptp wpa_supplicant
 
-# MATE APPEARANCE
-dconf write /org/mate/marco/general/compositing-manager true
-dconf write /org/mate/marco/general/center-new-window true
-dconf write /org/mate/desktop/interface/gtk-theme "'Zukitwo'"
-dconf write /org/mate/desktop/interface/icon-theme "'Faenza'"
-dconf write /org/mate/marco/general/theme "'Gnome-Cupertino'"
-
 # WEB & MAILS
-sudo pacman -S firefox flashplugin thunderbird
+sudo pacman -S firefox flashplugin
 
 # PHOTO
 sudo pacman -S shotwell
@@ -54,16 +47,13 @@ if [ ! -d ~/.config/sublime-text-3/Packages/User ]; then
 fi
 
 # DOCKER
-sudo pacman -S docker
+sudo pacman -S docker docker-compose
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo gpasswd -a $USER docker
 
-# SQL
-sudo pacman -S mariadb postgresql
-
 # PHP
-sudo pacman -S php php-intl php-gd php-mcrypt xdebug
+sudo pacman -S php php-intl
 sudo rm /etc/php/php.ini
 if [ ! -e /etc/php/php.ini ]; then
     sudo ln -s ~/dotfiles/php/php.ini /etc/php/php.ini
@@ -75,9 +65,9 @@ if [ ! -e /usr/local/bin/composer ]; then
     sudo mv composer.phar /usr/local/bin/composer
 fi
 sudo chmod a+x /usr/local/bin/composer
-composer global require "squizlabs/php_codesniffer=~2.3"
-composer global require "phpmd/phpmd=~2.2"
-composer global require "phpunit/phpunit=~4.6"
+composer global require "squizlabs/php_codesniffer=~3.1"
+composer global require "phpmd/phpmd=~2.6"
+composer global require "phpunit/phpunit=~6.4"
 
 # Z
 if [ ! -d ~/.rupaz ]; then
