@@ -18,7 +18,7 @@ sudo pacman -S xorg-fonts-type1 ttf-dejavu artwiz-fonts font-bh-ttf \
           font-bitstream-speedo gsfonts sdl_ttf ttf-bitstream-vera \
           ttf-cheapskate ttf-liberation adobe-source-code-pro-fonts
 sudo pacman -S lightdm lightdm-gtk-greeter
-sudo pacman -S mate mate-extra mate-themes mate-themes-extras faenza-icon-theme numix-themes
+sudo pacman -S budgie-desktop gnome-control-center
 
 sudo cp ~/dotfiles/xorg/keyboard.conf /etc/X11/xorg.conf.d/10-keyboard-layout.conf
 
