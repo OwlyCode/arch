@@ -28,15 +28,9 @@ if [ ! -e /etc/xdg/autostart/terminator.desktop ]; then
 fi
 
 # SUBLIME TEXT
-sudo pacman -S gtk2 libpng
-mkdir -p ~/builds
-cd ~/builds
-curl -L -O https://aur.archlinux.org/packages/su/sublime-text-dev/sublime-text-dev.tar.gz
-tar -xvf sublime-text-dev.tar.gz
-cd sublime-text-dev
-nano PKGBUILD
-nano sublime-text-dev.install
-makepkg -si
+curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
+echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/dev/x86_64" | sudo tee -a /etc/pacman.conf
+sudo pacman -Syu sublime-text
 mkdir -p ~/.config/sublime-text-3/Installed\ Packages
 mkdir -p ~/.config/sublime-text-3/Packages
 curl -L -O https://sublime.wbond.net/Package%20Control.sublime-package
