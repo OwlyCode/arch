@@ -9,10 +9,10 @@
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"drag_text": false,
 	"draw_white_space": "all",
+	"font_size": 10,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"PHP",
 		"Vintage"
 	],
 	"line_padding_bottom": 1,
