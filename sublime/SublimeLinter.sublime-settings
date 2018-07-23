@@ -16,7 +16,7 @@
         },
         "phpcs": {
             "@disable": false,
-            "args": [],
+            "args": ["--standard=PSR2"],
             "excludes": [],
             "standard": "PSR2"
         }
