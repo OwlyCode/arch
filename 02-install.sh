@@ -59,6 +59,14 @@ if [ ! -e /usr/local/bin/composer ]; then
     sudo mv composer.phar /usr/local/bin/composer
 fi
 sudo chmod a+x /usr/local/bin/composer
+
+
+if [ ! -e /usr/local/bin/php-cs-fixer ]; then
+    curl -O https://cs.sensiolabs.org/download/php-cs-fixer-v2.phar
+    sudo mv php-cs-fixer-v2.phar /usr/local/bin/php-cs-fixer
+fi
+sudo chmod a+x /usr/local/bin/php-cs-fixer
+
 composer global require "squizlabs/php_codesniffer=~3.1"
 composer global require "phpmd/phpmd=~2.6"
 composer global require "phpunit/phpunit=~6.4"
