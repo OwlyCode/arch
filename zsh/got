@@ -1,0 +1,51 @@
+#!/bin/bash
+
+set -e
+
+quotes[0]="Nothing isn't better or worse than anything. Nothing is just nothing. - \033[90mArya Stark\033[0m"
+quotes[1]="It wasn't for the murder that the Gods cursed the Rat Cook, or for serving the King's son in a pie. He killed a guest beneath his roof. That's something the Gods can't forgive. - \033[90mBran Stark\033[0m"
+quotes[2]="A woman's life is nine parts mess to one part magic, you'll learn that soon enough... and the parts that look like magic often turn out to be messiest of all. - \033[33mCersei Lannister\033[0m"
+quotes[3]="I am a lioness. I will not cringe for them. - \033[33mCersei Lannister\033[0m"
+quotes[4]="Jaime and I are more than brother and sister. We are one person in two bodies. We shared a womb together. He came into this world holding my foot, our old maester said. When he is in me, I feel... whole. - \033[33mCersei Lannister\033[0m"
+quotes[5]="Love is poison. A sweet poison, yes, but it will kill you all the same. - \033[33mCersei Lannister\033[0m"
+quotes[6]="The only way to keep your people loyal is to make certain they fear you more than they do the enemy. - \033[33mCersei Lannister\033[0m"
+quotes[7]="When you play the game of thrones, you win or you die. - \033[33mCersei Lannister\033[0m"
+quotes[8]="All men must die, but we are not men. - \033[31mDaenerys Targaryen\033[0m"
+quotes[9]="I am a Khaleesi of the Dothraki! I am the wife of the great Khal and I carry his son inside me! The next time you raise a hand to me will be the last time you have hands. - \033[31mDaenerys Targaryen\033[0m"
+quotes[10]="He who passes the sentence, must swing the sword. - \033[90mEddard Stark\033[0m"
+quotes[11]="When the snows fall and the white winds blow, the lone wolf dies, but the pack survives. - \033[90mEddard Stark\033[0m"
+quotes[12]="You think my life is such a precious thing to me, that I would trade my honor for a few more years...of what? - \033[90mEddard Stark\033[0m"
+quotes[13]="It's a shame the throne isn't made out of cocks, they'd have never got him off it. - \033[33mJamie Lannister\033[0m"
+quotes[14]="So many vows. They make you swear and swear. Defend the king. Obey the king. Obey your father. Protect the innocent. Defend the weak. What if your father despises the king? What if the king massacres the innocent? - \033[33mJamie Lannister\033[0m"
+quotes[15]="Tell me, if I stabbed the Mad King in the belly instead of the back, would you admire me more? - \033[33mJamie Lannister\033[0m"
+quotes[16]="I'll tell you what. I'm going to give you a present. After I raise my armies, and kill your traitor brother, I'll give you his head as well. - \033[33mJoffrey Baratheon\033[0m"
+quotes[17]="Different roads sometimes lead to the same castle. - \033[90mJon Snow\033[0m"
+quotes[18]="There’s no shame in fear, my father told me, what matters is how we face it. - \033[90mJon Snow\033[0m"
+quotes[19]="All my life men like you have sneered at me. And all my life I've been knocking men like you into the dust. - Lady Brienne of Tarth\033[0m"
+quotes[20]="There is a beast in every man and it stirs when you put a sword in his hand. - Ser Jorah Mormont\033[0m"
+quotes[21]="Each bruise is a lesson. Each Lesson makes us better. - \033[32mSyrio Forel\033[0m"
+quotes[22]="I will hurt you for this. A day will come when you think you are safe and happy, and your joy will turn to ashes in your mouth. And you will know the debt is paid. - \033[33mTyrion Lannister\033[0m"
+quotes[23]="I wish I was the monster you think I am! I wish I had enough poison for the whole pack of you! I would gladly give my life to watch you all swallow it! - \033[33mTyrion Lannister\033[0m"
+quotes[24]="I'm a monster, as well as a dwarf. You should charge me double. - \033[33mTyrion Lannister\033[0m"
+quotes[25]="It's hard to put a leash on a dog once you've put a crown on its head. - \033[33mTyrion Lannister\033[0m"
+quotes[26]="It's not easy being drunk all the time. If it were easy, everyone would do it. - \033[33mTyrion Lannister\033[0m"
+quotes[27]="Never forget what you are, the rest of the world will not. Wear it like armor and it can never be used to hurt you. - \033[33mTyrion Lannister\033[0m"
+quotes[28]="People often claim to hunger for truth, but seldom like the taste when it’s served up. - \033[33mTyrion Lannister\033[0m"
+quotes[29]="Never forget what you are, for surely the world will not. Make it your strength. Then it can never be your weakness. Armor yourself in it, and it will never be used to hurt you. - \033[33mTyrion Lannister\033[0m"
+quotes[30]="It's the family name that lives on. It's all that lives on. Not your personal glory, not your honor... but family. - \033[33mTywin Lannister\033[0m"
+quotes[31]="Any man who must say, ‘I am the king,’ is no true king. I’ll make sure you understand that when I’ve won your war for you. - \033[33mTywin Lannister\033[0m"
+quotes[32]="The things I do for love. - \033[33mJaime Lannister\033[0m"
+quotes[33]="If you think this has a happy ending, you haven’t been paying attention. - \033[90mRamsay Bolton\033[0m"
+quotes[34]="You’re going to die tomorrow, Lord Bolton. Sleep well. - \033[90mSansa Stark\033[0m"
+quotes[35]="That’s what I do: I drink and I know things. - \033[33mTyrion Lannister\033[0m"
+quotes[36]="Chaos isn’t a pit. Chaos is a ladder. - Littlefinger\033[0m"
+quotes[37]="Tell Cersei. I want her to know it was me. - \033[36mOlenna Tyrell\033[0m"
+quotes[38]="I don’t plan on knitting by the fire while men fight for me. I might be small, Lord Glover, and I might be a girl, but I am every bit as much a Northerner as you… and I don’t need your permission to defend the North. - \033[90mLyanna Mormont\033[0m"
+quotes[39]="You know nothing, Jon Snow. - \033[37mYgritte\033[0m"
+quotes[40]="Winter is coming. - \033[90mJon Snow\033[0m"
+
+rand=$[$RANDOM % ${#quotes[@]}]
+
+printf "\n    ${quotes[$rand]}\n\n"
+
+git $@

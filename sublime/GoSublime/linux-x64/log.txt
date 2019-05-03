@@ -1,4 +1,0 @@
-Gocode pkg: "."
-Gocode env: gocode.margoEnv{LibPath:"/usr/lib/go/pkg/linux_amd64:/home/tmaindron/Projects/side/golang/pkg/linux_amd64", GOOS:"linux", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/lib/go", GOPATH:"/home/tmaindron/Projects/side/golang", InstallSuffix:""}
-Gocode pkg: "."
-Gocode env: gocode.margoEnv{LibPath:"/usr/lib/go/pkg/linux_amd64:/home/tmaindron/Projects/side/golang/pkg/linux_amd64", GOOS:"linux", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/lib/go", GOPATH:"/home/tmaindron/Projects/side/golang", InstallSuffix:""}

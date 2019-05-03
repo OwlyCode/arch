@@ -7,6 +7,8 @@
 	[
 		"Babel",
 		"BracketHighlighter",
+		"Color Highlight",
+		"Color Scheme - Pastels UI",
 		"Cucumber",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
@@ -15,6 +17,7 @@
 		"GitGutter",
 		"GoSublime",
 		"GraphQL",
+		"HexViewer",
 		"JavaScriptNext - ES6 Syntax",
 		"MarkdownPreview",
 		"Materialize",
@@ -31,8 +34,10 @@
 		"SublimeLinter-eslint",
 		"SublimeLinter-php",
 		"SublimeLinter-phpcs",
+		"SublimeLinter-tslint",
 		"Theme - Fox",
 		"TrailingSpaces",
-		"Twig"
+		"Twig",
+		"TypeScript Syntax"
 	]
 }

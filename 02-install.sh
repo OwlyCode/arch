@@ -88,3 +88,5 @@ if [ ! -e $HOME/.oh-my-zsh/themes/owlycode.zsh-theme ]; then
 fi
 sudo pacman -S zsh zsh-completions
 chsh -s /bin/zsh
+
+sudo ln -s ~/dotfiles/zsh/got /usr/local/bin/got
