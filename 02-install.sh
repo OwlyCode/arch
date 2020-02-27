@@ -17,15 +17,8 @@ sudo pacman -S shotwell
 rm ~/.gitconfig
 ln -s ~/dotfiles/git/git.conf ~/.gitconfig
 
-# Terminator
-sudo pacman -S terminator
-mkdir -p ~/.config/terminator/
-if [ ! -e $HOME/.config/terminator/config ]; then
-    ln -s ~/dotfiles/terminator/terminator.conf ~/.config/terminator/config
-fi
-if [ ! -e /etc/xdg/autostart/terminator.desktop ]; then
-    sudo ln -s ~/dotfiles/terminator/terminator.desktop /etc/xdg/autostart/terminator.desktop
-fi
+# Tilix
+sudo pacman -S tilix
 
 # SUBLIME TEXT
 curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg

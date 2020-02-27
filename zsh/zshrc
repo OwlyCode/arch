@@ -30,6 +30,10 @@ if [ -e ~/.zshrc_local ]; then
     . ~/.zshrc_local
 fi
 
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
+
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
