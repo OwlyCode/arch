@@ -1,6 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="owlycode"
+ZSH_THEME=""
 
 plugins=(git)
 
@@ -29,3 +29,21 @@ function tellmylife() {
 if [ -e ~/.zshrc_local ]; then
     . ~/.zshrc_local
 fi
+
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+prompt pure
+
+zstyle :prompt:pure:execution_time color '#F55000'
+zstyle :prompt:pure:git:arrow color '#AAAA00'
+zstyle :prompt:pure:git:stash color '#AAAA00'
+zstyle :prompt:pure:git:branch color '#999999'
+zstyle :prompt:pure:git:branch:cached color '#FFFFFF'
+zstyle :prompt:pure:git:action color '#FFFFFF'
+zstyle :prompt:pure:git:dirty color '#FFFF00'
+zstyle :prompt:pure:host color '#FFFFFF'
+zstyle :prompt:pure:path color '#FFFFFF'
+zstyle :prompt:pure:prompt:error color '#990000'
+zstyle :prompt:pure:prompt:success color '#009933'
+zstyle :prompt:pure:prompt:continuation color '#F55000'
+zstyle :prompt:pure:git:stash show yes

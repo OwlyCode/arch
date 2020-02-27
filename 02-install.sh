@@ -83,9 +83,11 @@ fi
 if [ ! -e $HOME/.zshrc ]; then
     ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 fi
-if [ ! -e $HOME/.oh-my-zsh/themes/owlycode.zsh-theme ]; then
-	ln -s ~/dotfiles/zsh/owlycode.zsh-theme ~/.oh-my-zsh/themes/owlycode.zsh-theme
-fi
+
+# Pure
+mkdir -p "$HOME/.zsh"
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+
 sudo pacman -S zsh zsh-completions
 chsh -s /bin/zsh
 

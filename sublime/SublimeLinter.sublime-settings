@@ -1,5 +1,5 @@
 {
-    "debug": false,
+    "debug": true,
     "delay": 0.25,
     "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
     "lint_mode": "background",

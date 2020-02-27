@@ -10,7 +10,7 @@
 	"drag_text": false,
 	"draw_white_space": "all",
 	"font_face": "Fira code",
-	"font_size": 14,
+	"font_size": 10,
 	"hot_exit": false,
 	"ignored_packages":
 	[
