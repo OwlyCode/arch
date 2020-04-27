@@ -4,6 +4,8 @@ set -ex
 
 sudo -v
 
+sudo pacman -S bashtop
+
 # NETWORK TOOLS
 sudo pacman -S gnome-keyring networkmanager-openvpn networkmanager-pptp wpa_supplicant
 
