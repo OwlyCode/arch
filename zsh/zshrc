@@ -30,10 +30,6 @@ if [ -e ~/.zshrc_local ]; then
     . ~/.zshrc_local
 fi
 
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
-
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
@@ -51,3 +47,9 @@ zstyle :prompt:pure:prompt:error color '#990000'
 zstyle :prompt:pure:prompt:success color '#009933'
 zstyle :prompt:pure:prompt:continuation color '#F55000'
 zstyle :prompt:pure:git:stash show yes
+
+eval "$(zellij setup --generate-auto-start zsh)"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"

@@ -1,4 +1,0 @@
-{
-    "config": "${folder}/.php_cs.dist",
-    "on_save": true
-}
