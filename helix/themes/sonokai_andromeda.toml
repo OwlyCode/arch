@@ -73,8 +73,9 @@
 "ui.virtual.whitespace" = { fg = "bg4" }
 "ui.virtual.indent-guide" = { fg = "bg4" }
 "ui.virtual.ruler" = { bg = "bg2" }
+"ui.virtual.inlay-hint" = {fg = "grey"}
 
-"hint" = "blue"
+"hint" = "faint_blue"
 "info" = "green"
 "warning" = "yellow"
 "error" = "red"
@@ -106,6 +107,7 @@ yellow = "#edc763"
 green = "#9ed06c"
 cyan = "#ef9062" # added for compatibility with `edge` scheme
 blue = "#6dcae8"
+faint_blue = "#b5e8e8"
 purple = "#bb97ee"
 grey = "#7e8294"
 grey_dim = "#5a5e7a"
